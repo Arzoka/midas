@@ -1,4 +1,4 @@
-<h1 text-align="center"> WebshopProject probably for MakeItRain assignment Module 4 Mediacollege </h1>
+<h1 align="center"> WebshopProject probably for MakeItRain assignment Module 4 Mediacollege </h1>
 
-<h2 text-align="center"> Trello </h2>
-<p text-align="center"> https://trello.com/b/fshKWZ8x/webshop </p>
+<h2 align="center"> Trello </h2>
+<p align="center"> https://trello.com/b/fshKWZ8x/webshop </p>

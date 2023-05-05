@@ -7,15 +7,16 @@
     <meta name="description" content="Yoshi's clothing store is a store created purely out of boredom, any item here isn't real unless you're willing to pay me like 50 bucks">
     <link rel="stylesheet" href="css/styles.css">
     <script src="javascript/main.js"></script>
-    <title>Yoshi's epic clothing store</title>
+    <title>Yoshi's webshop</title>
     <link rel="icon" type="image/x-icon" href="img/logo.webp">
 </head>
 <body>
+    <div class="background"></div>
     <figure class="body-wrap">
         <header>
             <a class="logo-wrap" href="index.php"> <img class="logo" src="img/logo.webp"> </a>
-            <div>
-                <h1>Yoshi's epic clothing store</h1>
+            <div class="title-wrap">
+                <h1>Yoshi's webshop</h1>
             </div>
         </header>
 

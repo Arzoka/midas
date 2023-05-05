@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background: #ddd;
+    background: #000;
     min-height: 100vh;
     max-width: 100vw;
 }
@@ -33,19 +33,31 @@ body-wrap{
     justify-content: center;
 }
 
+.background{
+    z-index: -2;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(../img/background.webp) center no-repeat;
+    background-size: cover;
+    position: fixed;
+    margin: 0;
+}
+
 header{
     width: 100%;
     max-width: 100%;
     height: 10vh;
     background: #eee;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(30,0,0,0.3);
     position: absolute;
     top: 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
-header > div{
+.title-wrap{
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -112,22 +124,24 @@ option{
     justify-content: center;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 0.7rem;
     width: 100%;
 }
 
 .item-card{
+    background: #eee;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     aspect-ratio: 1/1.5;
-    width: 23vw;
-    box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+    width: 23.5vw;
+    box-shadow: 2px 3px 10px rgba(30,0,0,0.3);
 }
 
 .item-text{
     margin-left: 1rem;
     color: #333;
+    transition: font-size 0.3s;
 }
 
 .item-name{
@@ -144,6 +158,7 @@ option{
     width: 100%;
     height: 85%;
     overflow: hidden;
+    transition: height 0.3s;
 }
 
 .item-img{
@@ -157,11 +172,21 @@ option{
     transform: translate(-5%,-10%);
 }
 
+.item-img-wrap:hover{
+    height: 82.5%;
+}
+
+.item-img-wrap:hover + .item-name{
+    font-size: 3rem;
+}
+
+
+
 .footer{
     width: 100%;
     height: 10vh;
     background: #eee;
-    box-shadow: -2px -2px 10px rgba(0,0,0,0.3);
+    box-shadow: -2px -2px 10px rgba(30,0,0,0.3);
     display: flex;
     flex-direction: column;
     align-items: end;

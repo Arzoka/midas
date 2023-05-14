@@ -197,7 +197,6 @@ header{
 }
 
 .heading{
-    margin-top: 5vh;
     width: 100%;
     height: 70vh;
     display: flex;
@@ -243,7 +242,7 @@ header{
 }
 
 .heading-title{
-    color: #000;
+    color: #333;
     font-size: 6rem;
 }
 
@@ -264,6 +263,10 @@ header{
     color: white;
     border-radius: 5px;
     font-size: 3rem;
+}
+
+.button-class > a{
+    color: white;
 }
 
 .featured-items-wrap{
@@ -367,6 +370,17 @@ header{
 
 }
 
+.coolitem-title{
+    color: #000;
+    font-size: 6rem;
+}
+
+.coolitem-desc{
+    margin-top: 3rem;
+    color: #333;
+    font-size: 4rem;
+}
+
 .inner-coolitem-text-wrap{
     width: 100%;
     height: 60%;
@@ -375,35 +389,57 @@ header{
 }
 
 .reviews{
-    width: 100vw;
-    height: 50vh;
+    margin-top: 15vh;
+    gap: 5rem;
+    width: 100%;
+    height: 60vh;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.review-wrap{
-    width: 20%;
-    aspect-ratio: 1 / 1.5;
-    border: 1px solid black;
+.review-button{
+    cursor: pointer;
+    width: 3vw;
+    aspect-ratio: 1;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1vw;
+}
+
+#review-wrap{
+    height: 90%;
+    aspect-ratio: 1 / 1.4;
+    border-radius: 15px;
+    border: 2px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
+    transition: opacity 0.4s;
 }
 
-.review-user-img{
-
+#review-user-img{
+    border-radius: 50%;
+    width: 40%;
+    aspect-ratio: 1;
+    background: grey;
 }
 
-.review-username{
+#review-username{
     font-size: 2vw;
+    text-align: center;
 }
 
 .review-stars{
-
+    width: 50%;
 }
 
-.review-desc{
+#review-desc{
+    text-align: center;
+    width: 70%;
     font-size: 1vw;
 }
 

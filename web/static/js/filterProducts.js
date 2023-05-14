@@ -1,7 +1,3 @@
-if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
-}
-
 document.getElementById("opensortalgo").onclick = () => {
     var myhidden = document.getElementById("hidden");
     if (document.getElementById("post-form").style.opacity == 0) {

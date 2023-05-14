@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/styles.css">
-    <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/replaceState.js"></script>
+    <script src="../static/js/switchReviews.js" defer></script>
     <title>Midas | Collectibles online!</title>
     <meta name="description" content="Midas is a collectibles store ranging from trading cards to limited Nintendo Switch models.">
-    <link rel="icon" type="image/x-icon" href="../static/css/img/logo.webp">
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.webp">
 </head>
 <body>
     <div class="background"></div>
     <main>
         <header>
             <div class="title-wrap">
-                <a class="logo-wrap"href="index.html"><img class="logo"src="../static/img/logo.webp"></a>
-                <a href="index.html"><h1 class="title">MIDAS</h1></a>
+                <a class="logo-wrap"href="index.php"><img class="logo"src="../static/img/logo.webp"></a>
+                <a href="index.php"><h1 class="title">MIDAS</h1></a>
             </div>
             <div class="button-wrap">
                 <a class="headerbutton" href="products.php">Products</a>
@@ -26,7 +27,7 @@
         <section class="slogansection">
             <figure class="slogan-text-wrap">
                 <h2 class="slogan-text">Find your <span>newest</span> collectible and make it your <span>GOLD!</span></h2>
-                <a href="products.php"><button class="button-class">Go to items</button></a>
+                <button class="button-class"><a href="products.php">Go to items</a></button>
             </figure>
         </section>
         
@@ -41,7 +42,7 @@
                     <h2 class="heading-title">Pikachu N64</h2>
                     <p class="heading-desc">We've recently added the rare Pikachu N64 console to our collection!</p>
                 </figure>
-                <a href="item.php?p=2"><button class="button-class">Check it out!</button></a>
+                <button class="button-class"><a href="item.php?p=2">Check it out!</a></button>
             </figure>
         </section>
         
@@ -86,10 +87,10 @@
         <section class="coolitem-wrap">
             <figure class="coolitem-text-wrap">
                 <figure class="inner-heading-text-wrap">
-                    <h2 class="heading-title">Nintendo Switch OLED Zelda edition</h2>
-                    <p class="heading-desc">New Nintendo Switch version as a tribute to The Legend of Zelda: Tears of the Kingdom!</p>
+                    <h2 class="coolitem-title">Nintendo Switch OLED Zelda edition</h2>
+                    <p class="coolitem-desc">New Nintendo Switch version as a tribute to The Legend of Zelda: Tears of the Kingdom!</p>
                 </figure>
-                <a href="item.php?p=1"><button class="button-class">Check it out!</button></a>
+                <button class="button-class"><a href="item.php?p=1">Check it out!</a></button>
             </figure>
             <figure class="coolitem-image-wrap">
                 <div class="coolitem-image-wrap-wrap">
@@ -99,16 +100,18 @@
         </section>
         
         <section class="reviews">
-            <figure class="review-wrap">
-                <img class="review-user-img">
-                <h3 class="review-username">Bob Marley</h3>
-                <img class="review-stars">
-                <p class="review-desc">"fucking love this site lmao"</p>
+            <button id="review-button-left" class="review-button"><</button>
+            <figure data-number-review="1" id="review-wrap">
+                <img src="../static/img/dwayne.webp" id="review-user-img">
+                <h3 id="review-username">Dwayne "The Rock" Johnson</h3>
+                <img src="../static/img/stars.webp" class="review-stars">
+                <p id="review-desc">"This site overall has a really nice aesthetic and I would definitely get my collectibles here again someday."</p>
             </figure>
+            <button id="review-button-right" class="review-button">></button>
         </section>
         
         <footer class="footer">
-            <h3>© Midas Collectibles 2023</h3>
+            <h3>© Midas Collectibles <?php echo date("Y"); ?></h3>
             <a href="mailto: MidasCollectibles@NoExist.com"> <h3>MidasCollectibles@NoExist.com</h3></a>
             <h3>Yours truly &lt;3 </h3>
         </footer>

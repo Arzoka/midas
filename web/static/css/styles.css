@@ -451,7 +451,7 @@ header{
     height: 5vh;
     transform: translateY(10vh);
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     z-index: 99;
     transition: height 0.5s linear;
 }
@@ -512,7 +512,7 @@ form{
     transition: opacity 0.5s linear;
 }
 
-input{
+#post-form > input{
     text-align: center;
     height: 20%;
     width: 100%;
@@ -523,10 +523,33 @@ input{
     transition: font-size 0.2s linear;
 }
 
-input:hover{
+#post-form > input:hover{
     font-size: 2.2rem;
     color: #961F3B;
 
+}
+
+.orderprice{
+    gap: 1rem;
+    margin-right: 1rem;
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderprice > input{
+    height: 70%;
+}
+
+.orderprice > h3{
+    font-size: 1.5rem;
+}
+
+#min-max-button{
+    height: 70%;
+    font-size: 2rem;
 }
 
 .items{

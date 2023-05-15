@@ -27,10 +27,10 @@ if ($result->num_rows > 0) {
         $n_item_price = number_format((float)$row["item_price"] , 2, '.', '') . ',-';
 		$n_item_name = $row["item_name"];
 		if ($row["item_img"] != null) {
-			echo '<a href="item.php?p=' . $row["item_id"] . '"> <figure class="item-card"> ' . '<div class="item-img-wrap"> <img class="item-img" src="' . $row["item_img"] . '"' . '</img> </div>' . '<div class="item-text-wrap"> <h2 class="item-name item-text">' . $n_item_name . '</h2>' . '<h3 class="item-price item-text">' . $n_item_price . "</h2> </div> </figure> </a>";
+			echo '<a class="item-card-wrap" data-item-price="' . $row["item_price"] . '" href="item.php?p=' . $row["item_id"] . '"> <figure class="item-card"> ' . '<div class="item-img-wrap"> <img class="item-img" src="' . $row["item_img"] . '"' . '</img> </div>' . '<div class="item-text-wrap"> <h2 class="item-name item-text">' . $n_item_name . '</h2>' . '<h3 class="item-price item-text">' . $n_item_price . "</h2> </div> </figure> </a>";
 		}
 		else{
-			echo '<figure class="item-card"> ' . '<div class="item-img-wrap"> <img class="item-img" src="img/noimage.webp"' . '</img> </div>' . '<div class="item-text-wrap"> <h2 class="item-name item-text">' . $n_item_name . '</h2>' . '<h3 class="item-price item-text">' . $n_item_price . "</h2> </div> </figure>";
+			echo '<a href="item.php?p=' . $row["item_id"] . '"> <figure class="item-card"> ' . '<div class="item-img-wrap"> <img class="item-img" src="img/noimage.webp"' . '</img> </div>' . '<div class="item-text-wrap"> <h2 class="item-name item-text">' . $n_item_name . '</h2>' . '<h3 class="item-price item-text">' . $n_item_price . "</h2> </div> </figure> </a>";
 		}
 	}
 }

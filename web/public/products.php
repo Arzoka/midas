@@ -36,6 +36,12 @@
                     <input type="submit" name="az" value="Alphabetical A-Z">
                 </form>
             </figure>
+            <figure class="orderprice">
+                <h3>Price</h3>
+                <input id="min-price" type="number" value="0">
+                <input id="max-price" type="number" value="999">
+                <button id="min-max-button" class="button-class">Go</button>
+            </figure>
         </section>
 
         <section class="items">

@@ -19,7 +19,7 @@ else {
 	$sql = "SELECT * FROM items ORDER BY item_id asc";
 }
 
-$conn = mysqli_connect("localhost", "root", "", "items");
+$conn = mysqli_connect("localhost:3307", "root", "12838fh8HFSCHAS9u82hf2hIFHIhfhi", "items");
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

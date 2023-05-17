@@ -41,6 +41,7 @@
                 <?php include '../private/itemdesc.php'; ?>
                 <button id="addtocart-button"class="add-to-cart button-class">Add to cart</button>
             </figure>
+            <?php include '../private/itemid.php'; ?>
         </section>
       
         <footer class="footer">

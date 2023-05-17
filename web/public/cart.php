@@ -26,14 +26,15 @@
         
         <a id="shopping-cart-item-template"class="shopping-cart-item">
             <div class="shopping-img-wrap">
-                <img src="../static/img/pikachu-n64.webp"class="shopping-img">
+                <img src=""class="shopping-img">
             </div>
             <div class="shopping-product-info">
-                <h2 class="shopping-product-title">Pikachu n64</h2>
-                <h3 class="shopping-product-price">294.99</h3>
+                <h2 class="shopping-product-title"></h2>
+                <h3 class="shopping-product-price"></h3>
             </div>
-            <input class="shopping-product-amount"type="number" value="1">
-            <button id="remove-item-button-template" class="remove-item">Remove</button>
+
+            <button id="remove-item-button-template" class="remove-item button-class">Remove</button>
+            <p class="shopping-product-amount">1</p>
         </a>
         
         <footer class="footer">

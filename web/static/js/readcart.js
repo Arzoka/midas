@@ -5,12 +5,16 @@ if (localStorage.getItem("cart_content") != undefined) {
         let current_content = JSON.parse(cart[i]);
         let element = document.getElementById("shopping-cart-item-template");
         let newelement = element.cloneNode(true);
+
         element.querySelector("h2").innerHTML = current_content[0];
         element.querySelector("h3").innerHTML = current_content[1];
         element.querySelector("img").src = current_content[2];
+        element.querySelector("a").setAttribute("href","item.php?p=" + current_content[3]);
         element.querySelector("p").innerHTML = 1;
+
         itemid = current_content[3];
         let newid = "itemnr-"+itemid;
+
         if (document.getElementById(newid) == undefined) {
             element.setAttribute('id',newid);
 
@@ -19,7 +23,6 @@ if (localStorage.getItem("cart_content") != undefined) {
 
             document.getElementById(newbuttonid).onclick = function() {
                 console.log("remove "+i);
-                element.remove();
                 cart.splice(i,1);
                 localStorage.setItem("cart_content",JSON.stringify(cart));
                 window.location.reload();

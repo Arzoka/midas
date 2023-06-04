@@ -1,11 +1,11 @@
 <?php
     $current_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    $needle = "?p=";
-    $link_id = substr($current_link, strpos($current_link, $needle) + 3);
+    $needle = "?item_id=";
+    $link_id = substr($current_link, strpos($current_link, $needle) + 9);
 
     $sql = "SELECT * FROM items ORDER BY item_id asc";
 
-    $conn = mysqli_connect("localhost:3307", "root", "12838fh8HFSCHAS9u82hf2hIFHIhfhi", "items");
+    $conn = mysqli_connect("localhost:3307", "root", "", "items");
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

@@ -27,7 +27,7 @@ document.getElementById("min-max-button").onclick = function() {
 
 if (localStorage.getItem("min_price") == undefined) {
     localStorage.setItem("min_price",0);
-    localStorage.setItem("max_price",999);
+    localStorage.setItem("max_price",99999);
     document.getElementById("min-price").value = localStorage.getItem("min_price");
     document.getElementById("max-price").value = localStorage.getItem("max_price");
 }

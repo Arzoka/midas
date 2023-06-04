@@ -1,3 +1,7 @@
+if (localStorage.getItem("cart_content") != undefined) {
+    document.getElementById("cart-content-display").innerHTML = JSON.parse(localStorage.getItem("cart_content")).length;
+}
+
 document.getElementById("addtocart-button").onclick = function() {
     
     //variables
@@ -10,6 +14,7 @@ document.getElementById("addtocart-button").onclick = function() {
     var newarr = [item_name, item_price,item_img,item_id];
     var newarrstring = JSON.stringify(newarr);
 
+    dofunkyanimation();
 
     if (localStorage.getItem("cart_content") == undefined) {
         cart = new Array();
@@ -28,4 +33,18 @@ document.getElementById("addtocart-button").onclick = function() {
         cart.push(newarrstring);
         localStorage.setItem("cart_content",JSON.stringify(cart));
     }
+}
+
+function dofunkyanimation() {
+    setTimeout(() => {
+        document.getElementById("cart-content-display").classList.add("wiggleclass");
+
+        setTimeout(() => {
+            document.getElementById("cart-content-display").innerHTML = JSON.parse(localStorage.getItem("cart_content")).length;
+            setTimeout(() => {
+                document.getElementById("cart-content-display").classList.remove("wiggleclass");
+            }, 200);
+        }, 100);
+    }, 500);
+    
 }

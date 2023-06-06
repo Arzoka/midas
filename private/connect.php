@@ -1,8 +1,27 @@
 <?php
+if (!empty($_POST)) {
+	if(isset($_POST['standard'])){
+	  $sql = "SELECT * FROM items ORDER BY item_id asc";
+	}
+	if(isset($_POST['highlow'])){
+	  $sql = "SELECT * FROM items ORDER BY item_price desc";
+	}
+	if(isset($_POST['lowhigh'])){
+	  $sql = "SELECT * FROM items ORDER BY item_price asc";
+	}
+	if(isset($_POST['az'])){
+	  $sql = "SELECT * FROM items ORDER BY item_name asc";
+	}
+	  
+  }
+  
+else {
+	$sql = "SELECT * FROM items ORDER BY item_id asc";
+}
+
 
 $mysqli = mysqli_connect("localhost:3307", "root", "", "items");
   
-$sql = "SELECT * FROM items ORDER BY item_id asc";
 $result = $mysqli->query($sql);
 
 

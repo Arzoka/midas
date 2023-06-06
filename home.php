@@ -90,7 +90,7 @@
             </figure>
             <figure class="coolitem-image-wrap">
                 <div class="coolitem-image-wrap-wrap">
-                    <img class="coolitem-image" src="https://cdn.discordapp.com/attachments/754440404891336816/1105577453184892968/image.png">
+                    <img class="coolitem-image" src="static/db_img/zeldaswitch.webp">
                 </div>
             </figure>
         </section>

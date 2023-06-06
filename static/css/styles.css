@@ -311,7 +311,6 @@ header{
     margin-top: 20vh;
     width: 100%;
     padding: 0 10%;
-    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -1195,6 +1194,23 @@ form{
         margin-top: 5vh;
     }
     .recommended-items-wrap-wrap > h3 {
+        font-size: 3vw;
+    }
+    .steps-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .step-wrap:nth-of-type(1) {
+        margin-top: 10vh;
+    }
+    .step-wrap{
+        margin-bottom: 10vh;
+    }
+    .step-title{
+        font-size: 5vw;
+    }
+    
+    .step-desc{
         font-size: 3vw;
     }
 }

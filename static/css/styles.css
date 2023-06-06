@@ -769,7 +769,7 @@ form{
     transform: translateX(-5vh);
     margin-top: 3vh;
     z-index: 69;
-    width: 12.5vw;
+    width: 5vw;
     background: red;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -1055,7 +1055,7 @@ form{
 
 .item-card:hover > .item-text-wrap > .item-name{
     color: rgb(223,0,0);
-    font-size: 3.5vw;
+    font-size: 3.5em;
 }
 
 .item-price{
@@ -1063,7 +1063,7 @@ form{
 }
 
 .items{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1079,6 +1079,9 @@ form{
     .coolitem-image-wrap{
         width: 40%;
     }
+    .cart-wrap{
+        width: 7.5vw;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1087,6 +1090,12 @@ form{
     }
     #review-desc{
         font-size: 2.5rem;
+    }
+    .cart-wrap{
+        width: 10vw;
+    }
+    .recommended-items-wrap-wrap {
+        width: 75%;
     }
 }
 
@@ -1118,6 +1127,9 @@ form{
     }
     .shopping-carttotal{
         width: 45%;
+    }
+    .cart-wrap{
+        width: 12.5vw;
     }
 }
 
@@ -1180,6 +1192,9 @@ form{
     .summary-back{
         margin-top: 5vh;
     }
+    .recommended-items-wrap-wrap > h3 {
+        font-size: 3vw;
+    }
 }
 
 
@@ -1209,6 +1224,9 @@ form{
         height: 60%;
         font-size: 3vw;
     }
+    .recommended-items-wrap-wrap {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1227,10 +1245,6 @@ form{
         font-size: 5.5vw;
     }
 
-    .item-card:hover > .item-text-wrap > .item-name{
-        color: rgb(223,0,0);
-        font-size: 6vw;
-    }
 
     .item-price{
         font-size: 4.5vw;

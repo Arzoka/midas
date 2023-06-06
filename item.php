@@ -34,8 +34,11 @@
                     <div class="item-selection-wrap">
                         <?php include 'private/itemname.php'; ?>
                         <?php include 'private/itemprice.php'; ?>
-                        <div class="recommended-items-wrap">
-                            <?php include 'private/itemreco.php';?>
+                        <div class="recommended-items-wrap-wrap">
+                            <h3>Recommended:</h3>
+                            <div class="recommended-items-wrap">
+                                <?php include 'private/itemreco.php';?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -46,11 +49,11 @@
             </figure>
             <?php include 'private/itemid.php'; ?>
         </section>
-      
+    </section>
         <footer class="footer">
             <h3>© Midas Collectibles <?php echo date("Y"); ?></h3>
             <a href="MidasCollectibles@NoExist.com"> <h3>MidasCollectibles@NoExist.com</h3></a>
-            <h3>Yours truly &lt;3 </h3>
+            <h3>Melvin Lockx SD1C</h3>
         </footer>
     </main>
 </body>

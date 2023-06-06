@@ -32,19 +32,19 @@ function setreview(review_number) {
     opacityswitch();
     setTimeout(() => {
         if (review_number == 1) {
-            document.getElementById("review-user-img").src = "../web/static/img/dwayne.webp";
+            document.getElementById("review-user-img").src = "static/img/dwayne.webp";
             document.getElementById("review-username").innerHTML = 'Dwayne "The Rock" Johnson';
             document.getElementById("review-desc").innerHTML = '"This site overall has a really nice aesthetic and I would definitely get my collectibles here again someday."';
         }
     
         else if (review_number == 2)  {
-            document.getElementById("review-user-img").src = "../web/static/img/diya.webp";
+            document.getElementById("review-user-img").src = "static/img/diya.webp";
             document.getElementById("review-username").innerHTML = 'Diya Jawalapersad';
             document.getElementById("review-desc").innerHTML = '"Deez nuts"';
         }
     
         else if (review_number == 3) {
-            document.getElementById("review-user-img").src = "../web/static/img/obama.webp";
+            document.getElementById("review-user-img").src = "static/img/obama.webp";
             document.getElementById("review-username").innerHTML = "Barack Obama";
             document.getElementById("review-desc").innerHTML = '"My fellow Americans, this site is absolutely bussin bussin."';
         }

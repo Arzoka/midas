@@ -19,6 +19,13 @@
                 <a class="logo-wrap"href="home"><img class="logo"src="static/img/logo.webp"></a>
                 <a href="home"><h1 class="title">MIDAS</h1></a>
             </div>
+            <div class="search-wrap">
+                <span class="search-bar-wrap">
+                    <div class="search-icon"></div>
+                    <input id="search-bar" placeholder="search">
+                </span>
+                
+            </div>
             <div class="button-wrap">
                 <a class="headerbutton" href="products">Products</a>
             </div>
@@ -40,7 +47,6 @@
                 <h3>Price</h3>
                 <input id="min-price" type="number" value="0">
                 <input id="max-price" type="number" value="99999">
-                <button id="min-max-button" class="button-class">Go</button>
             </figure>
         </section>
 
@@ -54,7 +60,7 @@
         <footer class="footer">
             <h3>© Midas Collectibles <?php echo date("Y"); ?></h3>
             <a href="MidasCollectibles@NoExist.com"> <h3>MidasCollectibles@NoExist.com</h3></a>
-            <h3>Yours truly &lt;3 </h3>
+            <h3>Melvin Lockx SD1C</h3>
         </footer>
     </main>
 </body>

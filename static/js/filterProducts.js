@@ -1,3 +1,8 @@
+if (localStorage.getItem("search")) {
+    deletecardsfilter_search(localStorage.getItem("search"));
+    document.getElementById("search-bar").value = localStorage.getItem("search");
+}
+
 document.getElementById("opensortalgo").onclick = () => {
     var myhidden = document.getElementById("hidden");
     if (document.getElementById("post-form").style.opacity == 0) {
@@ -16,14 +21,7 @@ document.getElementById("opensortalgo").onclick = () => {
     }
 }
 
-const cards = document.getElementsByClassName("item-card-wrap");
 var deletecards = [];
-
-document.getElementById("min-max-button").onclick = function() { 
-    localStorage.setItem("min_price",document.getElementById("min-price").value);
-    localStorage.setItem("max_price",document.getElementById("max-price").value);
-    location.reload();
-};
 
 if (localStorage.getItem("min_price") == undefined) {
     localStorage.setItem("min_price",0);
@@ -39,6 +37,7 @@ else{
 deletecardsfilter(localStorage.getItem("min_price"),localStorage.getItem("max_price"));
 
 function deletecardsfilter(min_price, max_price) {
+    const cards = document.getElementsByClassName("item-card-wrap");
     for (let i = 0; i < cards.length; i++) {
         let card = cards[i];
         item_price = Math.floor(card.getAttribute("data-item-price")) + 1;
@@ -54,3 +53,41 @@ function deletecardsfilter(min_price, max_price) {
         deletecards[i].remove();
     }
 }
+
+function deletecardsfilter_search(search) {
+    const cards = document.getElementsByClassName("item-card-wrap");
+    deletecards = [];
+    search = search.toLowerCase();
+    for (let i = 0; i < cards.length; i++) {
+        let card = cards[i];
+        let newcardname = card.getAttribute("data-item-name").toLowerCase();
+        if (newcardname.includes(search)) {
+            console.log("yuh");
+        }
+        else {
+            console.log(card.getAttribute("data-item-name") + search);
+            deletecards.push(card);
+        }
+    }
+
+    for (let i = 0; i < deletecards.length; i++) {
+        deletecards[i].remove();
+    }
+    
+}
+
+
+
+document.addEventListener("keydown", function(event) {
+    if (event.code === "Enter") {
+        if (document.getElementById("search-bar") == document.activeElement) {
+            localStorage.setItem("search",document.getElementById("search-bar").value);
+            window.location.reload();
+        }
+        else if (document.getElementById("max-price") == document.activeElement || document.getElementById("min-price") == document.activeElement) {
+            localStorage.setItem("min_price",document.getElementById("min-price").value);
+            localStorage.setItem("max_price",document.getElementById("max-price").value);
+            location.reload();
+        }
+    }
+});

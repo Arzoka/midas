@@ -42,43 +42,51 @@
                     <h2 class="heading-title">Pikachu N64</h2>
                     <p class="heading-desc">We've recently added the rare Pikachu N64 console to our collection!</p>
                 </figure>
-                <button class="button-class"><a href="item.php?item_id=2">Check it out!</a></button>
+                <button class="button-class"><a href="item?item_id=2">Check it out!</a></button>
             </figure>
         </section>
         
         <section class="featured-items-wrap">
-            <a  href="item.php?item_id=1" class="featured-item">
+            <a  href="item?item_id=1" class="featured-item">
                 <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105577453184892968/image.png">
             </a>
-            <a href="item.php?item_id=2" class="featured-item">
+            <a href="item?item_id=2" class="featured-item">
                 <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105579877052203098/pikachu-n64.webp">
             </a>
-            <a href="item.php?item_id=3" class="featured-item">
+            <a href="item?item_id=3" class="featured-item">
                 <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105578195547324426/image.png">
             </a>
-            <a href="item.php?item_id=6" class="featured-item">
+            <a href="item?item_id=6" class="featured-item">
                 <img class="featured-item-img" src="https://m.media-amazon.com/images/I/81ZhVKZo2+L.jpg">
             </a>
         </section>
 
         <section class="steps-wrap">
             <figure class="step-wrap">
-                <img class="step-img" src="static/img/eyeglasses.webp">
+                <div class="step-img-wrap">
+                    <img class="step-img" src="static/img/eyeglasses.webp">
+                </div>
                 <h3 class="step-title">Take a look at our website!</h3>
                 <p class="step-desc">A good collectible doesn't come without a seller, feel free to look around!</p>
             </figure>
             <figure class="step-wrap">
-                <img class="step-img" src="static/img/tap.webp">
+            <div class="step-img-wrap">
+                    <img class="step-img" src="static/img/tap.webp">
+                </div>
                 <h3 class="step-title">Choose your product</h3>
                 <p class="step-desc">Go to the products page and choose the product you want</p>
             </figure>
             <figure class="step-wrap">
-                <img class="step-img" src="static/img/shopping-cart.webp">
+            <div class="step-img-wrap">
+                    <img class="step-img" src="static/img/shopping-cart.webp">
+                </div>
                 <h3 class="step-title">Add to cart</h3>
                 <p class="step-desc">Add the product to your cart and proceed to checkout</p>
             </figure>
             <figure class="step-wrap">
-                <img class="step-img" src="static/img/delivery-truck.webp">
+            <div class="step-img-wrap">
+                    <img class="step-img" src="static/img/delivery-truck.webp">
+                </div>
                 <h3 class="step-title">Wait for delivery</h3>
                 <p class="step-desc">Congratulations! You've bought your next addition to your collection!</p>
             </figure>
@@ -90,7 +98,7 @@
                     <h2 class="coolitem-title">Nintendo Switch OLED Zelda edition</h2>
                     <p class="coolitem-desc">New Nintendo Switch version as a tribute to The Legend of Zelda: Tears of the Kingdom!</p>
                 </figure>
-                <button class="button-class"><a href="item.php?item_id=1">Check it out!</a></button>
+                <button class="button-class"><a href="item?item_id=1">Check it out!</a></button>
             </figure>
             <figure class="coolitem-image-wrap">
                 <div class="coolitem-image-wrap-wrap">
@@ -113,7 +121,7 @@
         <footer class="footer">
             <h3>© Midas Collectibles <?php echo date("Y"); ?></h3>
             <a href="mailto: MidasCollectibles@NoExist.com"> <h3>MidasCollectibles@NoExist.com</h3></a>
-            <h3>Yours truly &lt;3 </h3>
+            <h3>Melvin Lockx SD1C</h3>
         </footer>
     </main>
 </body>

@@ -27,38 +27,26 @@
         <section class="slogansection">
             <figure class="slogan-text-wrap">
                 <h2 class="slogan-text">Find your <span>newest</span> collectible and make it your <span>GOLD!</span></h2>
-                <button class="button-class"><a href="products">Go to items</a></button>
+                <a href="products"><button class="button-class">Go to items</button></a>
             </figure>
         </section>
         
         <section class="heading">
             <figure class="heading-image-wrap">
                 <div class="heading-image-wrap-wrap">
-                    <img class="heading-image" src="static/img/pikachu-n64.webp">
+                    <?php include 'private/featuredimg.php'?>
                 </div>
             </figure>
             <figure class="heading-text-wrap">
                 <figure class="inner-heading-text-wrap">
-                    <h2 class="heading-title">Pikachu N64</h2>
-                    <p class="heading-desc">We've recently added the rare Pikachu N64 console to our collection!</p>
+                    <?php include 'private/featureddesc.php'?>
                 </figure>
-                <button class="button-class"><a href="item?item_id=2">Check it out!</a></button>
+                <?php include 'private/featuredbutton.php'?>
             </figure>
         </section>
         
         <section class="featured-items-wrap">
-            <a  href="item?item_id=1" class="featured-item">
-                <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105577453184892968/image.png">
-            </a>
-            <a href="item?item_id=2" class="featured-item">
-                <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105579877052203098/pikachu-n64.webp">
-            </a>
-            <a href="item?item_id=3" class="featured-item">
-                <img class="featured-item-img" src="https://cdn.discordapp.com/attachments/754440404891336816/1105578195547324426/image.png">
-            </a>
-            <a href="item?item_id=6" class="featured-item">
-                <img class="featured-item-img" src="https://m.media-amazon.com/images/I/81ZhVKZo2+L.jpg">
-            </a>
+        <?php include 'private/featured.php'?>
         </section>
 
         <section class="steps-wrap">

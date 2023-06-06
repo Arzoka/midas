@@ -643,11 +643,6 @@ form{
     object-fit: contain;
 }
 
-.item-card:hover > .item-text-wrap > .item-name{
-    color: rgb(223,0,0);
-    font-size: 2vw;
-}
-
 .search-wrap{
     position: absolute;
     width: 100%;
@@ -1055,7 +1050,7 @@ form{
 
 .item-card:hover > .item-text-wrap > .item-name{
     color: rgb(223,0,0);
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 .item-price{
@@ -1081,6 +1076,10 @@ form{
     }
     .cart-wrap{
         width: 7.5vw;
+    }
+    .item-card:hover > .item-text-wrap > .item-name{
+        color: rgb(223,0,0);
+        font-size: 2.5em;
     }
 }
 
@@ -1130,6 +1129,9 @@ form{
     }
     .cart-wrap{
         width: 12.5vw;
+    }
+    .items{
+        grid-template-columns: 1fr 1fr;
     }
 }
 

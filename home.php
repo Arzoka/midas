@@ -27,7 +27,7 @@
         <section class="slogansection">
             <figure class="slogan-text-wrap">
                 <h2 class="slogan-text">Find your <span>newest</span> collectible and make it your <span>GOLD!</span></h2>
-                <a href="products"><button class="button-class">Go to items</button></a>
+                <button class="button-class"><a href="products">Go to items</a></button>
             </figure>
         </section>
         

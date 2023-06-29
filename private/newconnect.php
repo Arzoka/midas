@@ -19,14 +19,27 @@ else {
 	$sql = "SELECT * FROM items ORDER BY item_id asc";
 }
 
+/*$user = "c8516test";
+$pass = "TestUserAccount1294194!?";*/
 
-require_once("dbconnect.php");
+$user = "root";
+$pass = "Taiga250123!";
 
-$result = $conn->query($sql);
+try {
+    $dbh = new PDO('mysql:host=containers-us-west-56.railway.app:7223;dbname=railway', $user, $pass);
+    foreach($dbh->query('SELECT * from items') as $row) {
+        print_r($row);
+    }
+    $dbh = null;
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
 
 
 
-if ($result->num_rows > 0) {
+
+/*if ($result->num_rows > 0) {
 	while ($row = $result-> fetch_assoc()) {
         $n_item_price = number_format((float)$row["item_price"] , 2, '.', '') . ',-';
 		$n_item_name = $row["item_name"];
@@ -38,5 +51,5 @@ if ($result->num_rows > 0) {
 		}
 	}
 }
-
+*/
 ?>

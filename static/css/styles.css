@@ -10,6 +10,9 @@
 
 a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 html{
@@ -246,7 +249,6 @@ header{
 
 .inner-heading-text-wrap{
     width: 100%;
-    height: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -260,10 +262,11 @@ header{
     margin-top: 3rem;
     color: #333;
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .button-class{
-    width: 20vw;
+    width: 25rem;
     height: 10vh;
     cursor: pointer;
     user-select: none;
@@ -277,6 +280,9 @@ header{
 
 .button-class > a{
     color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .featured-items-wrap{
@@ -401,6 +407,7 @@ header{
     margin-top: 3rem;
     color: #333;
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .inner-coolitem-text-wrap{
@@ -976,6 +983,7 @@ form{
     gap: 5rem;
     border-radius: 10px;
     background: rgb(247, 247, 247);
+    margin-bottom: 5vh;
 }
 
 .summarytitle{
@@ -1135,6 +1143,9 @@ form{
 }
 
 @media screen and (max-width: 750px) {
+    a{
+        justify-content: center;
+    }
     .coolitem-wrap{
         flex-direction: column-reverse;
     }
@@ -1172,7 +1183,7 @@ form{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 5rem;
+        gap: 6rem;
     }
     form{
         align-items: start;
@@ -1228,6 +1239,12 @@ form{
     .item-img-page-wrap{
         width: 100%;
     }
+    .slogansection{
+        justify-content: center;
+    }
+    .slogan-text-wrap {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1244,6 +1261,21 @@ form{
     }
     .recommended-items-wrap-wrap {
         width: 100%;
+    }
+    .heading-title{
+        font-size: 3rem;
+    }
+    .coolitem-title{
+        font-size: 3rem;
+    }
+    .heading-desc{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .review-button{
+        display: none;
     }
 }
 
@@ -1274,6 +1306,9 @@ form{
 
     .title{
         font-size: 4vw;
+    }
+    #review-wrap{
+        height: 50%;
     }
 }
 

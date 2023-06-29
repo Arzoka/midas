@@ -6,11 +6,12 @@
     $recoarray = array();
     $sql = "SELECT * FROM items ORDER BY item_id asc";
 
-    $conn = mysqli_connect("localhost:3307", "root", "", "items");
+    require_once("dbconnect.php");
+
     $result = $conn->query($sql);
 
     for ($i = $result->num_rows - 3; $i < $result->num_rows; $i = $i + 0) {
-        $conn = mysqli_connect("localhost:3307", "root", "", "items");
+        require_once("dbconnect.php");
         $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while ($row = $result-> fetch_assoc()) {

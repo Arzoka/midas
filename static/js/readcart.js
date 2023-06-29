@@ -62,9 +62,12 @@ if (localStorage.getItem("cart_content") != undefined) {
 }
 
 if (document.getElementById("shopping-cart-item-template") != undefined){
-    document.getElementById("shopping-cart-item-template").querySelector("h2").innerHTML = "Sorry! It seems you don't have anything in your shopping cart yet. :(";
     document.getElementById("shopping-cart-item-template").querySelector("h3").remove();
     document.getElementById("shopping-cart-item-template").querySelector("img").remove();
     document.getElementById("shopping-cart-item-template").querySelector("p").remove();
     document.getElementById("shopping-cart-item-template").querySelector("button").remove();
+    document.getElementById("shopping-cart-item-template").querySelector("div").remove();
+    let newel = document.createElement("h2");
+    newel.innerHTML = "Sorry! It seems you don't have anything in your shopping cart yet. :(";
+    document.getElementById("shopping-cart-item-template").appendChild(newel);
 }

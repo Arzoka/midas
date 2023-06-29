@@ -7,7 +7,7 @@
     $sql = "SELECT * FROM items ORDER BY item_id asc";
 
     for ($i = 0; $i < 3; $i = $i + 0) {
-        $conn = mysqli_connect("localhost:3307", "root", "", "items");
+        require_once("dbconnect.php");
         $result = $conn->query($sql);
         $number = rand(0,$result->num_rows);
         if (in_array($number,$recoarray) == false) {

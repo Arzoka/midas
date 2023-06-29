@@ -45,7 +45,7 @@
             </figure>
             <figure class="item-bottom-wrap">
                 <?php include 'private/itemdesc.php'; ?>
-                <a href="#shopping-cart" id="addtocart-button"><button class="add-to-cart button-class">Add to cart</button></a>
+                <button class="add-to-cart button-class"><a href="#shopping-cart" id="addtocart-button">Add to cart</a></button>
             </figure>
             <?php include 'private/itemid.php'; ?>
         </section>
